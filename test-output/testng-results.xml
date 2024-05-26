@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-26T15:57:10 WAT" name="Default suite" finished-at="2024-05-26T15:57:43 WAT" duration-ms="33671">
+    <groups>
+    </groups>
+    <test started-at="2024-05-26T15:57:10 WAT" name="Default test" finished-at="2024-05-26T15:57:43 WAT" duration-ms="33671">
+      <class name="tests.loginTest">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:tests.loginTest@4fb3ee4e]" started-at="2024-05-26T15:57:10 WAT" name="Setup" finished-at="2024-05-26T15:57:35 WAT" duration-ms="25284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="inputSpecialCharacter()[pri:0, instance:tests.loginTest@4fb3ee4e]" started-at="2024-05-26T15:57:35 WAT" name="inputSpecialCharacter" finished-at="2024-05-26T15:57:42 WAT" duration-ms="7289" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputSpecialCharacter -->
+        <test-method signature="inputAlphaNumeric()[pri:1, instance:tests.loginTest@4fb3ee4e]" started-at="2024-05-26T15:57:42 WAT" name="inputAlphaNumeric" finished-at="2024-05-26T15:57:43 WAT" duration-ms="456" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputAlphaNumeric -->
+        <test-method signature="inputNumeric()[pri:2, instance:tests.loginTest@4fb3ee4e]" started-at="2024-05-26T15:57:43 WAT" name="inputNumeric" finished-at="2024-05-26T15:57:43 WAT" duration-ms="210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputNumeric -->
+        <test-method signature="inputAlphabet()[pri:3, instance:tests.loginTest@4fb3ee4e]" started-at="2024-05-26T15:57:43 WAT" name="inputAlphabet" finished-at="2024-05-26T15:57:43 WAT" duration-ms="276" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [2030] but found [Mubarak]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [2030] but found [Mubarak]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at tests.loginTest.inputAlphabet(loginTest.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputAlphabet -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.loginTest@4fb3ee4e]" started-at="2024-05-26T15:57:43 WAT" name="tearDown" finished-at="2024-05-26T15:57:43 WAT" duration-ms="106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.loginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
